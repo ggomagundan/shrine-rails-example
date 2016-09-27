@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calendar</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', controller_name, media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', controller_name, 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>

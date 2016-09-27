@@ -1,0 +1,25 @@
+<%= form_for @album,  html: { class: "form-horizontal" }  do |f| %>
+  <% @album.errors.full_messages.each do |msg| %>
+    <li><%= msg %></li>
+  <% end %>
+
+  <div class="form-group row">
+    <%= f.label :title, class: "col-sm-2"  %>
+    <div class="col-sm-7">
+      <%= f.text_field :title , class: "form-control" %>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <%= f.label :end_time, class: "col-sm-2" %>
+    <div class="col-sm-7">
+      <%= f.hidden_field :image, value: f.object.cached_image_data %>
+      <%= f.file_field :image %>
+    </div>
+  </div>
+
+
+
+  <%= f.submit "Send", class: "btn btn-primary" %>
+<% end %>
+
