@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/janko-m/shrine.git
+  revision: da2d4ab105777bdea5792e8742e1968cd69692c8
+  specs:
+    shrine (2.3.1)
+      down (>= 2.3.6)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -45,6 +52,7 @@ GEM
     arel (7.1.2)
     builder (3.2.2)
     byebug (9.0.5)
+    coderay (1.1.1)
     coffee-rails (4.2.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.2.x)
@@ -97,6 +105,10 @@ GEM
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
     pkg-config (1.1.7)
+    pry (0.10.4)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
     puma (3.6.0)
     rack (2.0.1)
     rack-test (0.6.3)
@@ -137,13 +149,12 @@ GEM
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (>= 1.1, < 3)
-    shrine (2.3.1)
-      down (>= 2.3.5)
     signet (0.7.3)
       addressable (~> 2.3)
       faraday (~> 0.9)
       jwt (~> 1.5)
       multi_json (~> 1.10)
+    slop (3.6.0)
     spring (1.7.2)
     spring-watcher-listen (2.0.0)
       listen (>= 2.7, < 4.0)
@@ -188,10 +199,11 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
+  pry
   puma (~> 3.0)
   rails (~> 5.0.0, >= 5.0.0.1)
   sass-rails (~> 5.0)
-  shrine
+  shrine!
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3

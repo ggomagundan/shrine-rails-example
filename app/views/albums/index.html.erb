@@ -5,7 +5,7 @@
   <% for photo in @photos %>
     <tr>
         <td><%= photo.title%></td>
-        <td><%= image_tag  photo.image_url%></td>
+        <td><%= image_tag  photo.image_url if photo.image.present?%></td>
     </tr>
   <% end %>
 </table>
