@@ -45,8 +45,10 @@ end
 gem 'google_calendar'
 
 gem "tus-server"
-gem "shrine", github: "janko-m/shrine"
+gem "shrine"
 gem "pry"
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'mysql2'
+gem 'faker'
+gem 'shrine-url'

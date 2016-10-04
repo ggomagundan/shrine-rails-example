@@ -47,6 +47,7 @@ jQuery(function() {
           }
         }
 
+        alert(upload.url);
         fileField.prev().val(JSON.stringify(file));
         fileField.after($('<p> <img src="' + upload.url + '"></img></p>'));
       }

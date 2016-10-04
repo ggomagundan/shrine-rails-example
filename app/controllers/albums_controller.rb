@@ -9,6 +9,7 @@ class AlbumsController < ApplicationController
 
   def create
     @photo = Album.new(photo_params)
+
     if @photo.save
       redirect_to albums_url, :notice => "Successfully created Photo."
     else
