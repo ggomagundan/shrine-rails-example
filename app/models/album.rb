@@ -1,3 +1,3 @@
 class Album < ApplicationRecord
-include ImageUploader[:image]
+  include ImageUploader[:image]
 end
