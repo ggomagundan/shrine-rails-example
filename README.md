@@ -4,6 +4,7 @@
 Rails Project using [Shrine](https://github.com/janko-m/shrine) and [Tus-Ruby-Server](https://github.com/janko-m/tus-ruby-server)
 
 
+
 ## Files
 
 config.ru
@@ -62,7 +63,8 @@ app/assets/javascripts/application.js
 
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+// require turbolinks # turbolinks sometime occured bugs. Then disabled
+turbolinks
 //= require tus
 
 
@@ -115,6 +117,9 @@ jQuery(function() {
 This sample Running server on 3006 port.
 
 If you wanna another port, change `application.js`  file Line 27
+
+    $ rails s -p3006
+
 
 Thanks to Help [janko-m](https://github.com/janko-m)
 
