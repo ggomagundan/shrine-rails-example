@@ -4,8 +4,9 @@ require_relative 'config/environment'
 
 require "tus/server"
 
-run Rails.application
-
 map "/files" do
   run Tus::Server
 end
+
+run Rails.application
+

@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require tus
 
 
 jQuery(function() {
@@ -23,7 +24,7 @@ jQuery(function() {
     fileField.val("");
 
     var upload = new tus.Upload(file, {
-      endpoint: "http://localhost:3005/files", 
+      endpoint: "http://localhost:3006/files", 
       metadata: {filename: file.name, content_type: file.type},
       onError: function(error) {
         alert(error);
